@@ -1,0 +1,144 @@
+/* style.css — simplistic, minimal, inspired by deepseek.com */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9fafc;          /* soft neutral background */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1.5rem;
+  color: #1e1f22;
+}
+
+/* centered card — clean, minimal */
+.centered-box {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eaeef2;
+  padding: 2.5rem 2.8rem;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.15s ease;
+}
+
+.centered-box h2 {
+  font-weight: 450;
+  font-size: 1.8rem;
+  letter-spacing: -0.01em;
+  color: #0b1c2c;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* subtle file info */
+.file-info {
+  background: #f7f9fb;
+  padding: 0.65rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  border: 1px solid #dee5ed;
+  word-break: break-word;
+  font-weight: 400;
+}
+
+/* button group side by side */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+
+/* minimal button styling */
+.btn {
+  background: #ffffff;
+  border: 1px solid #cfdde9;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 450;
+  color: #1e293b;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.1s;
+  min-width: 130px;
+  background: #fdfdfe;
+  backdrop-filter: none;
+}
+
+.btn:hover {
+  background: #f1f5f9;
+  border-color: #a6bbd0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transform: none;               /* no lift — keep it grounded */
+  color: #0f1a28;
+}
+
+.btn:active {
+  background: #e4eaf1;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+  transform: none;
+}
+
+/* parse button — subtle primary style */
+.parse-btn {
+  background: #1e3a5f;            /* deep blue, like DeepSeek's accent */
+  border-color: #1e3a5f;
+  color: white;
+}
+
+.parse-btn:hover {
+  background: #2b4c74;
+  border-color: #2b4c74;
+  color: white;
+  box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
+}
+
+/* result area — clean, minimal */
+.result-area {
+  margin-top: 1.5rem;
+  padding: 1rem 1.4rem;
+  background: #fafcff;
+  border-radius: 18px;
+  font-size: 0.9rem;
+  color: #1f2e40;
+  border-left: 4px solid #1e3a5f;
+  text-align: left;
+  min-height: 4.5rem;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid #e6ecf3;
+  border-left-width: 4px;
+  border-left-color: #1e3a5f;
+}
+
+/* small screens */
+@media (max-width: 480px) {
+  .centered-box {
+    padding: 1.8rem 1.5rem;
+  }
+  .btn {
+    padding: 0.7rem 1.2rem;
+    min-width: 120px;
+    font-size: 0.95rem;
+  }
+}

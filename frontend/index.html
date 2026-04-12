@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Parser · centered box</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="centered-box">
+      <h2>📄 File parser</h2>
+      <p class="file-info" id="fileDisplay">No file selected</p>
+
+      <div class="button-group">
+        <button type="button" id="uploadBtn" class="btn upload-btn">
+          📂 Upload file
+        </button>
+
+        <button type="button" id="parseBtn" class="btn parse-btn">
+          ⚙️ Parse
+        </button>
+      </div>
+
+      <input type="file" id="fileInput" accept="*/*" style="display: none" />
+
+      <div id="parseResult" class="result-area" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

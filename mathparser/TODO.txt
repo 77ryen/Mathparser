@@ -1,0 +1,4 @@
+Create app.py
+Create a job that compiles the code directly so that it is executed subsequently when invoking localhost:5000 from within the same server.
+Create FastAPI in app.py to serve an http serve....
+
