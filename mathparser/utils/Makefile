@@ -1,4 +1,4 @@
-CXX := g++ -std=c++17 -INumerical_methods -fopenmp -O3
+CXX := g++ -std=c++17 -INumerical_methods -fopenmp -ILexer
 src := $(wildcard *.cpp)
 target := test
 
